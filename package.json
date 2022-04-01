@@ -30,7 +30,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-remove-html-comments": "^1.0.1",
     "gulp-rigger": "latest",
-    "gulp-sass": "latest",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "latest",
     "gulp-string-replace": "latest",
     "gulp-uglify": "^3.0.1",
@@ -38,7 +38,8 @@
     "imagemin-jpeg-recompress": "latest",
     "imagemin-pngquant": "latest",
     "node-bourbon": "latest",
-    "run-sequence": "latest"
+    "run-sequence": "latest",
+    "sass": "^1.49.10"
   },
   "browserslist": [
     "> 1%",
