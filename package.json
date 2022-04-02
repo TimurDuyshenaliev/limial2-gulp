@@ -4,6 +4,7 @@
   "private": true,
   "description": "Panovs",
   "main": "gulpfile.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +24,9 @@
     "gulp-babel": "^8.0.0",
     "gulp-cache": "latest",
     "gulp-clean-css": "^3.10.0",
+    "gulp-file-include": "^2.3.0",
     "gulp-if": "latest",
-    "gulp-imagemin": "latest",
+    "gulp-imagemin": "^7.1.0",
     "gulp-minify-css": "^1.2.3",
     "gulp-plumber": "latest",
     "gulp-postcss": "^8.0.0",
@@ -39,7 +41,7 @@
     "imagemin-pngquant": "latest",
     "node-bourbon": "latest",
     "run-sequence": "latest",
-    "sass": "^1.49.10"
+    "sass": "^1.49.11"
   },
   "browserslist": [
     "> 1%",

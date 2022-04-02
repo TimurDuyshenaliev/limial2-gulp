@@ -34,7 +34,7 @@ var path = {
 		libs: 'dist/libs'
     },
     src: {
-		html:  'app/*.html',
+		html:  'app/**/*.html',
         js:    'app/js/*.js',
         scss: 'app/sass/**/*.scss',
 		css:   'app/css/',
@@ -43,7 +43,7 @@ var path = {
         fonts: 'app/fonts/**/*.*'
     },
     watch: {
-        html:  'app/*.html',
+        html:  'app/**/*.html',
         js:    'app/js/*.js',
         css:   'app/css/',
         img:   'app/img/**/*.*',
@@ -54,8 +54,8 @@ var path = {
 };
 
 /* подключаем gulp и плагины */
-var gulp = require('gulp'), // подключаем Gulp
-    sass = require('gulp-sass'), // модуль для компиляции SASS (SCSS) в CSS
+const sass = require('gulp-sass')(require('sass')); // модуль для компиляции SASS (SCSS) в CSS
+var gulp = require('gulp'), // подключаем Gulp 
 	autoprefixer = require('autoprefixer'), // модуль для автоматической установки автопрефиксов
 	postcss = require('gulp-postcss'),
 	browserSync = require('browser-sync').create(), // сервер для работы и автоматического обновления страниц
@@ -67,12 +67,12 @@ var gulp = require('gulp'), // подключаем Gulp
 	cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
 	minifyCss = require('gulp-minify-css'),
 	gulpif = require('gulp-if'),
-	// imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
+	imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
 	jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg
 	pngquant = require('imagemin-pngquant'), // плагин для сжатия png
 	del = require('del'),
 	replace = require('gulp-string-replace'), //автозамена строк
-	rigger = require('gulp-rigger'), // модуль для импорта содержимого одного файла в другой
+	fileinclude = require('gulp-file-include'), // модуль для импорта содержимого одного файла в другой
 	runSequence = require('run-sequence'),
 	babel = require('gulp-babel'), //преобразование скриптов с поддержкой ES6
 	removeHtmlComments = require('gulp-remove-html-comments'); //удаление комментариев в html-файлах
@@ -98,6 +98,15 @@ gulp.task('sass:build', function (cb) {
     .pipe(gulp.dest(path.src.css))  // выкладывание готовых файлов
 	.pipe(browserSync.stream());
 	cb();
+});
+
+gulp.task('fileinclude', function() {
+    gulp.src(['index.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./'));
 });
 
 gulp.task('build:delhtmlcomm', function (cb) { //удаляем комментрари в html 
@@ -164,7 +173,7 @@ gulp.task('clean', function (cb) {
 	cb();
 });
 
-//gulp.task('default', gulp.series('sass','watch'));
+gulp.task('default', gulp.series('sass','watch'));
 gulp.task('dev', gulp.series('watch'));
 
 gulp.task('build', gulp.series('clean', 'sass:build', 'useref', 'images', 'fonts', 'script', 'build:delhtmlcomm', function (done) {
