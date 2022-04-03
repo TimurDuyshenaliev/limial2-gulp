@@ -36,8 +36,8 @@ var path = {
     src: {
 		html:  'app/**/*.html',
         js:    'app/js/*.js',
-        scss: 'app/sass/**/*.scss',
-		css:   'app/css/',
+        scss: 'app/sass/*.scss',
+		css:   'app/css/*.css',
         img:   'app/img/**/*.*',
         imgwork:   'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*'
@@ -45,7 +45,7 @@ var path = {
     watch: {
         html:  'app/**/*.html',
         js:    'app/js/*.js',
-        css:   'app/css/',
+        css:   'app/css/*.css',
         img:   'app/img/**/*.*',
 		imgwork:   'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*'
@@ -54,11 +54,14 @@ var path = {
 };
 
 /* подключаем gulp и плагины */
-const sass = require('gulp-sass')(require('sass')); // модуль для компиляции SASS (SCSS) в CSS
-var gulp = require('gulp'), // подключаем Gulp 
+
+
+var gulp = require('gulp'), // подключаем Gulp
+    sass = require('gulp-sass')(require('sass')), // модуль для компиляции SASS (SCSS) в CSS
+    fileinclude = require('gulp-file-include'), // модуль для импорта содержимого одного файла в другой
 	autoprefixer = require('autoprefixer'), // модуль для автоматической установки автопрефиксов
 	postcss = require('gulp-postcss'),
-	browserSync = require('browser-sync').create(), // сервер для работы и автоматического обновления страниц
+	browserSync = require('browser-sync').create(), // сервер для работы и автоматического обновления страниц 
 	useref = require('gulp-useref'), //парсит специфичные блоки и конкатенирует описанные в них стили и скрипты.
 	cache = require('gulp-cache'), // модуль для кэширования
 	plumber = require('gulp-plumber'), // модуль для отслеживания ошибок
@@ -72,7 +75,6 @@ var gulp = require('gulp'), // подключаем Gulp
 	pngquant = require('imagemin-pngquant'), // плагин для сжатия png
 	del = require('del'),
 	replace = require('gulp-string-replace'), //автозамена строк
-	fileinclude = require('gulp-file-include'), // модуль для импорта содержимого одного файла в другой
 	runSequence = require('run-sequence'),
 	babel = require('gulp-babel'), //преобразование скриптов с поддержкой ES6
 	removeHtmlComments = require('gulp-remove-html-comments'); //удаление комментариев в html-файлах
@@ -91,7 +93,7 @@ gulp.task('sass', function (cb) {
 
 gulp.task('sass:build', function (cb) {  
   return gulp.src(path.src.scss)
-  .pipe(plumber()) // для отслеживания ошибок
+   .pipe(plumber()) // для отслеживания ошибок
    .pipe(sass()) // scss -> css
    .pipe(postcss([ autoprefixer() ]))
     .pipe(cleanCSS()) // минимизируем CSS
@@ -100,17 +102,9 @@ gulp.task('sass:build', function (cb) {
 	cb();
 });
 
-gulp.task('fileinclude', function() {
-    gulp.src(['index.html'])
-      .pipe(fileinclude({
-        prefix: '@@',
-        basepath: '@file'
-      }))
-      .pipe(gulp.dest('./'));
-});
-
-gulp.task('build:delhtmlcomm', function (cb) { //удаляем комментрари в html 
+gulp.task('build:delhtmlcomm', function (cb) { //удаляем комментрари в html и добавление строк кода
   return gulp.src('dist/**/*.html')
+    .pipe(fileinclude())
     .pipe(removeHtmlComments())
     .pipe(gulp.dest('dist'));
 	cb();
@@ -174,7 +168,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', gulp.series('sass','watch'));
-gulp.task('dev', gulp.series('watch'));
+gulp.task('dev', gulp.series('watch',));
 
 gulp.task('build', gulp.series('clean', 'sass:build', 'useref', 'images', 'fonts', 'script', 'build:delhtmlcomm', function (done) {
     done();

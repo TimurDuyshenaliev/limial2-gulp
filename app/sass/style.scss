@@ -1,6 +1,13 @@
-// Here we write your SCSS style
-
-h1 {
-	font-size: 1rem;
-	color: red; 
-}   
+@import 'reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import 'general.scss';
+// ----------- HEADER ---------- //
+@import 'blocks/header.scss';
+// ----------- QUESTIONS ---------- //
+@import 'blocks/questions.scss';
+// ----------- FOOTER ---------- //
+@import 'blocks/footer.scss';
+@import 'index.scss';
+@import 'vps.scss';
+@import 'dedicated.scss';
+@import 'about.scss';
