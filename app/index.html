@@ -17,7 +17,40 @@
 <!-- START HERO -->
     <div class="hero">
 <!-- START HEADER -->
-@@include('blocks/header.html')
+<div class="header">
+    <div class="container">
+        <nav class="header--nav">
+            <li class="header-list">
+                <ul class="top--list">
+                    <a class="top--list__item" href="#">Выделенные серверы</a>
+                </ul>
+                <ul class="top--list">
+                    <a class="top--list__item" href="#">Виртуальные серверы</a>
+                </ul>
+                <ul class="top--list">
+                    <a class="top--list__item" href="#">База знаний</a>
+                </ul>
+                <ul class="top--list">
+                    <a class="top--list__item" href="#">Контакты</a>
+                </ul>
+                <ul class="top--list">
+                    <a class="top--list__item" href="#">Про нас</a>
+                </ul>
+            </li>
+        </nav>
+        <div class="line"></div>
+        <div class="header--bottom">
+            <a class="logo" href="index.html">
+                <img src="images/Cloud.svg" alt="logo">
+                <p>Limial</p>
+            </a>
+            <div class="reg--log">
+                <button class="btn reg">Регистрация</button>
+                <button class="btn log">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- END HEADER -->
     <div class="main">
         <div class="container">
@@ -242,7 +275,84 @@
 </div>
 <!-- END QA -->
 <!-- START FOOTER -->
-@@include('blocks/footer.html')
+<footer>
+    <div class="conteiner">
+        <div class="footer-list">
+            <ul class="footer-main-info">
+                <li class="logo">
+                    <a class="logo" href="index.html">
+                        <img src="img/Cloud.svg" alt="logo">
+                        <p>Limial</p>
+                    </a>
+                </li>
+                <li>
+                    <p class="slogan">
+                        Надёжный хостинг для ваших любимых проектов.
+                    </p>
+                </li>
+                <li class="footer-main-info__contacts">
+                    <img src="/img/mail.svg" alt="mail"><a href="mailto:sales@limial.com">sales@limial.com</a>
+                </li>
+                <li class="footer-main-info__contacts">
+                    <img src="/img/phone.svg" alt="tel"><a href="tel:+380665767991">+ 38(066)576-7991</a>
+                </li>
+            </ul>
+            <ul class="footer-help">
+                <li>
+                    <p>
+                        Тех. Поддержка
+                    </p>
+                </li>
+                <li>
+                    <a href="#">Поддержка</a>
+                </li>
+                <li>
+                    <a href="#">База знаний</a>
+                </li>
+                <li>
+                    <a href="#">Сообщить о жалобе (abuse@limial.com)</a>
+                </li>
+            </ul>
+            <ul class="footer-company">
+                <li>
+                    <p>
+                        Компания
+                    </p>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#">Документы</a>
+                </li>
+                <li>
+                    <a href="#">Способы оплаты</a>
+                </li>
+            </ul>
+            <ul class="footer-social">
+                <li>
+                    <p>
+                        Социальные сети
+                    </p>
+                </li>
+                <ul class="social-media">
+                    <li>
+                        <a href="#"><img src="/img/Facebook.svg" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/telegaram.svg" alt="telegram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/Twitter.svg" alt="twitter"></a>
+                    </li> 
+                </ul> 
+            </ul>
+        </div>
+    </div>
+</footer>
 <!-- END FOOTER -->
 </body>
 </html>
