@@ -97,7 +97,7 @@ gulp.task('sass:build', function (cb) {
    .pipe(sass()) // scss -> css
    .pipe(postcss([ autoprefixer() ]))
     .pipe(cleanCSS()) // минимизируем CSS
-    .pipe(gulp.dest(path.src.css))  // выкладывание готовых файлов
+    .pipe(gulp.dest(path.dist.css))  // выкладывание готовых файлов
 	.pipe(browserSync.stream());
 	cb();
 });
@@ -115,7 +115,7 @@ gulp.task('watch', function(cb) {
         server: './app'  
     });
     gulp.watch('app/*.html').on('change',browserSync.reload);
-    gulp.watch('app/sass/*.scss', gulp.series('sass')); //.on('change',browserSync.reload);
+    gulp.watch('app/sass/**/*.scss', gulp.series('sass')).on('change',browserSync.reload);
 	gulp.watch('app/css/*.css', browserSync.reload);
     gulp.watch('app/js/**/*.js').on('change', browserSync.reload);
 	cb();

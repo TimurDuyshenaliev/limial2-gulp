@@ -1,16 +1,24 @@
 // ----------- HERO ---------- //
 .hero2{
-    background-image: url("/images/vps-background.jpeg");
+    background-image: url("/img/vps-background.jpeg");
+    background-size: cover;
     height: 100vh;
 }
 .main--list__item{
     color: #ffffff;
 }
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 // ----------- PLANS ---------- //
 .plans{
     text-align: center;
     padding-top: 30px;
-    background-image: url('/images/wave-3.png'),url("/images/vps-background.jpeg");
+    background-image: url("/img/wave-3.png"), url("/img/vps-background.jpeg");
     background-size: 100% 60%;
     background-repeat: no-repeat;
 }
@@ -112,7 +120,9 @@
 .scale__list{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 15px;
+    
 }
 .scale__list__item{
     background: #FFFFFF;

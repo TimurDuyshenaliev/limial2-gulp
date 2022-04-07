@@ -20,28 +20,29 @@ header{
     color: #FFFFFF;
     text-decoration: none;
 }
-.header-bottom{
+.header--bottom{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.rg{
+.reg{
     height: 35px;
     background-color:rgba(0,0,0,0);
     color: white;
     margin-right: 10px;
     border: 1px solid white;
-    transform: translateY(13px);
+    
 }
-.rg:hover{
+.reg:hover{
     background-color: white;
     color: #1B56C5;
-    transform: translateY(13px);
+    
 }
-.lg{
+.log{
     height: 35px;
     width: 100px;
     color: #1B56C5;
-    transform: translateY(13px);
+    
 }
 .line{
     width: 100%;

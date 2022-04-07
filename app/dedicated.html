@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Лучший хостинг - для вас"/>
+	<meta name="author" lang="en" content="Limial" />
+	<title>Limial</title>
+
+    <!-- build:css css/style.min.css-->
+    <link rel="stylesheet" href="css/*.css/style.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+    <!-- START HERO -->
+<section class="hero3">
+    <div class="conteiner">
+        <div class="header">
+            <nav class="header--nav">
+                <li class="header-list">
+                    <ul class="top--list">
+                        <a class="top--list__item" href="/dedicated.html">Выделенные серверы</a>
+                    </ul>
+                    <ul class="top--list">
+                        <a class="top--list__item" href="/virtual-servers.html">Виртуальные серверы</a>
+                    </ul>
+                    <ul class="top--list">
+                        <a class="top--list__item" href="/instructions.html">База знаний</a>
+                    </ul>
+                    <ul class="top--list">
+                        <a class="top--list__item" href="/contacts.html">Контакты</a>
+                    </ul>
+                    <ul class="top--list">
+                        <a class="top--list__item" href="/aboutus.html">Про нас</a>
+                    </ul>
+                </li>
+            </nav>
+            <div class="line"></div>
+            <div class="header--bottom">
+                <a class="logo" href="index.html">
+                    <img src="img/Cloud.svg" alt="logo">
+                    <p>Limial</p>
+                </a>
+                <div class="reg&log">
+                    <button class="btn reg">Регистрация</button>
+                    <button class="btn log">Войти</button>
+                </div>
+            </div>
+    
+        </div>
+        <div class="main2">
+            <div class="main2__dedicated-text">
+                <h2>
+                    Выделенные серверы
+                </h2>
+                <div class="dedicated-text__p">
+                    <p>
+                        Мы предлагаем мощные выделенные серверы с лучшими условиями за свою цену на рынке. Вы можете подобрать сервер под любые ваши требования, например производительный сервер с NVMe дисками или же сервер с максимальным соединением до 6 Гбит/с для молниеносной работы с сетью. 
+                    </p>
+                    <p>
+                        Бесплатная поддержка 24/7, оперативно поможет в решении любых ваших вопросов. Мы стремимся автоматизировать рутинные процедуры, чтобы улучшить удобство пользования сервисами и снизить конечную цену продукта. Наша цель свести необходимость технической поддержки к минимуму.
+                    </p>
+                    <p>
+                        Опираясь на нашу огромную сеть защиты с высокой пропускной способностью 4 Тбит/с, мы блокируем любые атаки на ваши проекты. Вы же в свою очередь можете следить и управлять вашим сервером с помощью контрольной панели cPanel. Обратите внимание, что панель — не платная опция, а стандарт для всех выделенных серверов.
+                    </p>
+                </div>
+            </div>
+            <div class="main2__benefits">
+                <h2>
+                    Преймущества
+                </h2>
+                <ul class="benefits__list">
+                    <li class="benefits__list__item">
+                        <div class="list__item__img">
+                            <img src="img/hardware.svg" alt="pc">
+                        </div>
+                        <p>Новейшие серверы мира с NVMe дисками</p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <div class="list__item__img">
+                            <img src="img/uptime.svg" alt="Cloud">
+                        </div>
+                        <p>Подключение к серверу до 10 Гбит/с</p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <div class="list__item__img">
+                            <img src="img/protection.svg" alt="protect us">
+                        </div>
+                        <p>Надёжная анти-DDoS защита</p>
+                    </li>
+                    <li class="benefits__list__item">
+                        <div class="list__item__img">
+                            <img src="img/support.svg" alt="cPanel">
+                        </div>
+                        <p>Контрольная панель cPanel</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END HERO -->
+<!-- START CH.PLANS -->
+<section class="your-server">
+    <div class="conteiner">
+        <h2 class="your-server__h2">
+            Выбери свой сервер
+        </h2>
+        <div class="your-server__content">
+            <div class="your-server__result-filter">
+                <form>
+                    <ul class="result-filter__list">
+                        <li class="result-filter__list__item">
+                            <details class="result-filter-price">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Цена</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__price">
+                                        <p class="filter-range__price-min">$66.75</p>
+                                        <p class="filter-range__price-max">$950</p>
+                                    </div>
+                                    <input type="range" value="905" min="66.75" max="950">
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter__list__item">
+                            <details class="result-filter-cpu">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Процессор</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="result-filter-cpu__brand">
+                                    <p>Бренд</p>
+                                    <div class="cpu-brand__amd">
+                                        <input type="checkbox" name="AMD" id="#">
+                                        <label for="#">AMD</label>
+                                    </div>
+                                    <div class="cpu-brand__intel">
+                                        <input type="checkbox" name="Intel" id="#">
+                                        <label for="#">Intel</label>
+                                    </div>
+                                </div>
+                                <div class="result-filter-cpu__value">
+                                    <p>Количество процессоров</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__value">
+                                            <p class="filter-range__value-min">1 CPU</p>
+                                            <p class="filter-range__value-max">2 CPU</p>
+                                        </div>
+                                        <input type="range" value="2" min="1" max="2">
+                                    </div>
+                                </div>
+                                <div class="result-filter-cpu__core">
+                                    <p>Ядра / потоки</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__core">
+                                            <p class="filter-range__core-min">4c / 8t</p>
+                                            <p class="filter-range__core-max">32c / 64t</p>
+                                        </div>
+                                        <input type="range" value="5" min="1" max="5">
+                                    </div>
+                                </div>
+                                <div class="result-filter-cpu__ghz">
+                                    <p>Частота ядра</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__ghz">
+                                            <p class="filter-range__ghz-min">2.1 Ghz</p>
+                                            <p class="filter-range__ghz-max">4.2 Ghz</p>
+                                        </div>
+                                        <input type="range" value="4" min="1" max="4">
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-memory">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Память</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__memory">
+                                        <p class="filter-range__memory-min">16 GB</p>
+                                        <p class="filter-range__memory-max">2 TB</p>
+                                    </div>
+                                    <input type="range" value="32" min="16" max="32">
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-storage">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Хранилище</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="result-filter-storage__type">
+                                    <div class="storage__type-NVMe">
+                                        <input type="checkbox" name="nvme" id="#">
+                                        <label for="#">NVMe</label>
+                                    </div>
+                                    <div class="storage__type-sas">
+                                        <input type="checkbox" name="SAS" id="#">
+                                        <label for="#">SAS</label>
+                                    </div>
+                                    <div class="storage__type-sata">
+                                        <input type="checkbox" name="SATA" id="#">
+                                        <label for="#">SATA</label>
+                                    </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-net">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Сеть</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__net-public">
+                                        <p class="filter-range__net-public-min">100 Mbps</p>
+                                        <p class="filter-range__net-public-max">4 Gbps</p>
+                                    </div>
+                                    <input type="range" value="10000" min="1000" max="10000" id="net-public">
+                                    <label class="net" for="net-public">Публичная сеть</label>
+                                </div>
+                                <div class="filter-range">
+                                    <div class="filter-range__net-private">
+                                        <p class="filter-range__net-private-min">0 Mbps</p>
+                                        <p class="filter-range__net-private-max">50 Gbps</p>
+                                    </div>
+                                    <input type="range" value="50" min="1" max="50" id="net-private">
+                                    <label class="net" for="net-private">Публичная сеть</label>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-location">
+                                <summary>
+                                    <div class="summary-title">
+                                        <p>Локация</p>
+                                        <img src="img/arrow-up.svg" alt="">
+                                    </div>
+                                </summary>
+                                <div class="filter-location">
+                                    <div class="filter-location-fr">
+                                        <input type="checkbox" name="fr" id="#">
+                                        <label for="#">Франция</label>
+                                    </div>
+                                    <div class="filter-location-ca">
+                                        <input type="checkbox" name="can" id="#">
+                                        <label for="#">Канада</label>
+                                    </div>
+                                    <div class="filter-location-us">
+                                        <input type="checkbox" name="us" id="#">
+                                        <label for="#">США</label>
+                                    </div>
+                                    <div class="filter-location-av">
+                                        <input type="checkbox" name="av" id="#">
+                                        <label for="#">Австралия</label>
+                                    </div>
+                                    <div class="filter-location-gr">
+                                        <input type="checkbox" name="gr" id="#">
+                                        <label for="#">Германия</label>
+                                    </div>
+                                    <div class="filter-location-pl">
+                                        <input type="checkbox" name="pl" id="#">
+                                        <label for="#">Польша</label>
+                                    </div>
+                                    <div class="filter-location-gb">
+                                        <input type="checkbox" name="gb" id="#">
+                                        <label for="#">Великобритания</label>
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
+                    <input class="result-filter__reset" type="reset" value="Сбрость все фильтры ➔">
+                </form>
+                
+            </div>
+            <div class="your-server__result-plans">
+                <ul>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CH.PLANS -->
+<!-- START QA -->
+<div class="question">
+    <div class="conteiner">
+        <div class="question-content-text">
+            <h2>
+                Часто задаваемые вопросы
+            </h2>
+            <h3>
+                Найдите ответы на частые вопросы
+            </h3>
+        </div>
+        <div class="questiouns">
+            <input class="hide" id="hd-1" type="checkbox">
+            <label for="hd-1"><p>Какие преймущества использования Выделенных серверов?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Самое главное достоинство – полная управляемость и независимость от других пользователей. VPS решения предусматривают одновременное использование физического сервера многими пользователями, а в выделенном хостинге емкость жесткого диска, процессорная мощность и память находится в распоряжении всего одного пользователя.
+                К недостаткам можно отнести относительно медленное масштабирование в сравнении с VPS. Исходя из этого выделенные серверы позволяют использовать максимальное количестов ресурсов и масксимальную надежность. Поэтому, выделеннные серверы - используют в высоконагруженных проектах.
+            </div>
+            <input class="hide" id="hd-2" type="checkbox">
+            <label for="hd-2"><p>Какие преймущества использования VPS?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Вы получите выделенные ресурсы, это означает, что вам не нужно делиться мощностью процессора, оперативной памятью или дисковым пространством. У вас есть определённое количество ресурсов, которыми вы распоряжаетесь по своему усмотрению. 
+                Самое значительное преимущество VPS-хостинга – вы получаете root-доступ и полный контроль над сервером. Это означает, что вы можете установить всевозможные программы для вашей инфраструктуры и работать над ресурсоёмкими проектами. Когда ваш проект будет разрастаться вы можете в несколько кликов увеличить мощность сервера и обеспечить повышенную надежность работы проекта с помощью Балансировщика нагрузки. Поэтому наши VPS отплично подойдут для малых и средних проектов.
+            </div>
+            <input class="hide" id="hd-3" type="checkbox">
+            <label for="hd-3"><p>Где находятся ваши серверы?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Расположение дата-центров является основным фактором, который должен учитывать хостинг-провайдер. Для хорошого опыта работы с серверами, в любой точке мира, наши решения должны быть адаптируемыми и максимально приближенными к их пользователям. Предложение услуг в стране или рядом со страной где вы ведете бизнес, является гарантией доверия, безопасности и эффективности. Вот почему мы сотрудничаем с дата-центрами по всему миру и продолжаем каждый день расширять географический охват наших решений. Вы можете найти дата-центры с нашими серверами в следующих странах: Франция, Канада, США, Австралия, Германия, Польша, Великобритания и Сингапур.
+            </div>
+            <input class="hide" id="hd-4" type="checkbox">
+            <label for="hd-4"><p>Какие есть методы оплаты?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                В данный момент мы поддерживаем такие методы оплаты - Masterpass, платежная карта, FacePay24, Visa Checkout, PrivatPay, Google Pay, Apple Pay.
+            </div>
+            <input class="hide" id="hd-5" type="checkbox">
+            <label for="hd-5"><p>Получаю ли я какую-нибудь поддержку?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Мы оказываем круглосуточную поддержку 365/7. Хостинг VPS и Выделенные серверы не администрируются нашими специалистами, однако наша команда поддержки клиентов сделает всё возможное, чтобы помочь с оплатой и общими техническими вопросами.
+            </div>
+            <input class="hide" id="hd-6" type="checkbox">
+            <label for="hd-6"><p>Какое время безпрерывной работы продукта гарантировано?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Настоящее Соглашение об уровне обслуживания виртуального частного сервера (SLA) представляет собой политику, регулирующую использование перечисленных услуг Limial и гарантирует время безперырвной работы сервера:
+                VPS - 99.9%
+                Rise -	99.9%
+                Best Value -	99.9%
+                Advance -	99.95%
+                Infrastructure -	99.95%
+                Game -	99.9%
+                Storage -	99.95%
+                HG -	99.95%
+                High Grade -	99.99%
+                Scale -	99.99%
+            </div>
+            <input class="hide anim" id="hd-7" type="checkbox">
+            <label for="hd-7"><p>Есть ли возврат средств?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                Вы всегда можете оформить возврат средств и Вам будет возвращена первоначально уплаченная сумма в течение 30 дней после запроса на снятие средств, но дни, в которые использовалась услуга, вычитаются из суммы возмещения на пропорциональной основе.
+            </div>
+            <input class="hide" id="hd-8" type="checkbox">
+            <label for="hd-8"><p>Что запрещено размещать на сервере?</p><img src="img/vniz.svg" alt="cursor-down"></label>
+            <div>
+                На серверах запрещено размещать информацию, которая противоречит законодательству Украины, материалы порнографического содержания, не лицензионное программное обеспечение.
+                На серверах компании не должно размещаться программное обеспечение, которое может быть использовано для нарушения работоспособности других серверов, или рассылки спама.
+                Более подробно можно узнать в договоре публичной оферты.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END QA -->
+<!-- START FOOTER -->
+<footer>
+    <div class="conteiner">
+        <div class="footer-list">
+            <ul class="footer-main-info">
+                <li class="logo">
+                    <a class="logo" href="index.html">
+                        <img src="img/Cloud.svg" alt="logo">
+                        <p>Limial</p>
+                    </a>
+                </li>
+                <li>
+                    <p class="slogan">
+                        Надёжный хостинг для ваших любимых проектов.
+                    </p>
+                </li>
+                <li class="footer-main-info__contacts">
+                    <img src="img/mail.svg" alt="mail"><a href="mailto:sales@limial.com">sales@limial.com</a>
+                </li>
+                <li class="footer-main-info__contacts">
+                    <img src="img/phone.svg" alt="tel"><a href="tel:+380665767991">+ 38(066)576-7991</a>
+                </li>
+            </ul>
+            <ul class="footer-help">
+                <li>
+                    <p>
+                        Тех. Поддержка
+                    </p>
+                </li>
+                <li>
+                    <a href="#">Поддержка</a>
+                </li>
+                <li>
+                    <a href="#">База знаний</a>
+                </li>
+                <li>
+                    <a href="#">Сообщить о жалобе (abuse@limial.com)</a>
+                </li>
+            </ul>
+            <ul class="footer-company">
+                <li>
+                    <p>
+                        Компания
+                    </p>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#">Документы</a>
+                </li>
+                <li>
+                    <a href="#">Способы оплаты</a>
+                </li>
+            </ul>
+            <ul class="footer-social">
+                <li>
+                    <p>
+                        Социальные сети
+                    </p>
+                </li>
+                <ul class="social-media">
+                    <li>
+                        <a href="#"><img src="img/Facebook.svg" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/telegram.svg" alt="telegram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/Twitter.svg" alt="twitter"></a>
+                    </li> 
+                </ul> 
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->

@@ -1,7 +1,7 @@
 // ----------- HERO ---------- //
 .hero3{
     height: max-content;
-    background-image: url("/images/main_background.jpeg");
+    background-image: url("/img/main_background.jpeg");
     background-position: top;
     background-size: cover;
 }
@@ -51,7 +51,9 @@
 }
 // ----------- RESULT ---------- //
 .your-server{
-    background-image: url("/images/vps-background.jpeg");
+    background-image: url("/img/main_background.jpeg");
+    background-position: top;
+    background-size: cover;
     padding-bottom: 50px;
 }
 .your-server__content{

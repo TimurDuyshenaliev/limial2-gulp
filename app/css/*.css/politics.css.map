@@ -1,1 +1,0 @@
-{"version":3,"sources":["politics.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAEJ;EACI","file":"politics.css","sourcesContent":[".politics{\n    display: flex;\n    padding-bottom: 30px;\n}\n.hero{\n    height: 200px;\n}\n"]}
