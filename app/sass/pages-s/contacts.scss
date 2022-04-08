@@ -1,0 +1,82 @@
+.contacts--hero{
+    background: linear-gradient(312deg, #2368e1 0%, #1243AA 100%);
+}
+.contacts > h2{
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.contacts--top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 45px;
+    margin-top: 30px;
+    height: 240px;
+}
+.contacts--top__p1{
+    width: 45%;
+    color: black;
+    padding: 20px;
+}
+.contacts--top__p1 > p{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+.contacts--top__p2 > p{
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1.75;
+    text-align: justify;
+}
+.contacts--bottom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.contacts--bottom__segment{
+    width: 31%;
+    height: 145px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .segment--icon{
+        width: 90px;
+        height: 100%;
+        border-right: 2px solid #D8D8D8 ;
+        text-align: center;
+        padding-top: 52px;
+    }
+    .segment--icon:hover{
+        background-color: #D8D8D8;
+        border-radius: 3px;
+    }
+    .segment--text{
+        width: 260px;
+        padding: 20px;
+    }
+    .segment--text > h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.25;
+        padding:0;
+    }
+    .segment--text > p{
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #909090;
+    }
+}
