@@ -1,4 +1,8 @@
 // ----------- HEADER ---------- //
+.header{
+    // background: linear-gradient(89deg, #1344ab 0%, #2a76f6 100%);
+    background-image: url("/img/main_background.jpeg");
+}
 header{
     display: flex;
     flex-direction: column;

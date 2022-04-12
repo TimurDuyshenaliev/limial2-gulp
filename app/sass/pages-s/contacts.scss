@@ -1,10 +1,11 @@
-.contacts--hero{
-    background: linear-gradient(312deg, #2368e1 0%, #1243AA 100%);
+.contacts{
+    //background: linear-gradient(312deg, #2368e1 0%, #1243AA 100%);
+    background-image:url("/img/main_background.jpeg");
 }
-.contacts > h2{
+.contacts > .conteiner > h2{
     text-align: center;
     color: #FFFFFF;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .contacts--top{
     display: flex;

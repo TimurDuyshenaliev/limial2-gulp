@@ -481,6 +481,10 @@ p {
     font-size: 1.8rem;
   }
 }
+.header {
+  background-image: url("/img/main_background.jpeg");
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -626,8 +630,7 @@ header {
   }
 }
 footer {
-  background-image: url("/img/wave-footer.png"), url("/img/main_background.jpeg");
-  background-position: bottom;
+  background-image: url("/img/main_background.jpeg");
   color: #FFFFFF;
 }
 
@@ -686,16 +689,13 @@ footer {
 .hero {
   height: 100vh;
   background-image: url("/img/wave-1.png"), url("/img/main_background.jpeg");
-  background-position: top;
-  background-size: cover;
 }
 
 .main {
-  margin-top: 85px;
   margin-bottom: 30px;
 }
 
-.main > .container {
+.main > .conteiner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -948,9 +948,9 @@ footer {
 }
 
 .hero2 {
-  background-image: url("/img/vps-background.jpeg");
-  background-size: cover;
+  background-image: url("/img/main_background.jpeg");
   height: 100vh;
+  padding-top: 40px;
 }
 
 .main--list__item {
@@ -967,7 +967,7 @@ footer {
 .plans {
   text-align: center;
   padding-top: 30px;
-  background-image: url("/img/wave-3.png"), url("/img/vps-background.jpeg");
+  background-image: url("/img/wave-3.png"), url("/img/main_background.jpeg");
   background-size: 100% 60%;
   background-repeat: no-repeat;
 }
@@ -1188,8 +1188,6 @@ s .options-vps__list__item > p {
 .hero3 {
   height: max-content;
   background-image: url("/img/main_background.jpeg");
-  background-position: top;
-  background-size: cover;
 }
 
 .main2 {
@@ -1197,7 +1195,7 @@ s .options-vps__list__item > p {
   flex-direction: row;
   justify-content: space-between;
   color: #ffffff;
-  margin-top: 40px;
+  padding-top: 40px;
   padding-bottom: 160px;
 }
 
@@ -1248,8 +1246,6 @@ s .options-vps__list__item > p {
 
 .your-server {
   background-image: url("/img/main_background.jpeg");
-  background-position: top;
-  background-size: cover;
   padding-bottom: 50px;
 }
 
@@ -1465,7 +1461,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .about {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .about__list {
@@ -1510,14 +1506,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: #ffffff;
 }
 
-.contacts--hero {
-  background: linear-gradient(312deg, #2368e1 0%, #1243AA 100%);
+.contacts {
+  background-image: url("/img/main_background.jpeg");
 }
 
-.contacts > h2 {
+.contacts > .conteiner > h2 {
   text-align: center;
   color: #FFFFFF;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .contacts--top {

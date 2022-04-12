@@ -2,15 +2,13 @@
 .hero3{
     height: max-content;
     background-image: url("/img/main_background.jpeg");
-    background-position: top;
-    background-size: cover;
 }
 .main2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: #ffffff;
-    margin-top: 40px;
+    padding-top: 40px;
     padding-bottom: 160px;
 }
 .main2__dedicated-text{
@@ -52,8 +50,6 @@
 // ----------- RESULT ---------- //
 .your-server{
     background-image: url("/img/main_background.jpeg");
-    background-position: top;
-    background-size: cover;
     padding-bottom: 50px;
 }
 .your-server__content{
