@@ -1,7 +1,7 @@
 // ----------- HERO ---------- //
 .hero{
     height: 100vh;
-    background-image: url("/img/wave-1.png"), url("/img/main_background.jpeg");
+    background-image:url('/img/main_background.jpeg');
 }
 .main{
     margin-bottom: 30px;
@@ -11,17 +11,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-@media (max-width: 768px) {
-    .main{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        text-align: center;
-    }
-    .hero{
-        height: 1080px;
-    }
 }
 .text__h1{
     font-weight: bold;
@@ -41,8 +30,11 @@
     width: 180px;
     color: #1B56C5;
 }
-.main__img > img{
-    width: 100%;
+.main__img{
+    margin-top: 40px;
+    img{
+        width: 100%;
+    }
 }
 // ----------- OPTIONS ---------- //
 .options{
@@ -59,15 +51,6 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-}
-@media (max-width: 768px){
-    .list-of-options{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 5px;
-    }
 }
 .list-of-options__item{
     width: 255px;
@@ -103,33 +86,10 @@
     padding-top: 120px;
     padding-bottom: 160px;
 }
-@media (max-width: 768px){
-    .security__content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 120px;
-        padding-bottom: 160px;
-        text-align: justify;
-    }
-}
 .content-text{
     width: 55%;
     color: white;
     padding-right: 50px;
-}
-@media (max-width: 768px){
-    .content-text{
-        width: 100%;
-        color: white;
-        padding-right: 50px;
-        margin-bottom: 20px;
-    }
-    .security-list{
-        padding-top: 25px;
-        text-align: start;
-        margin-left: 30px;
-    }
 }
 .security-list{
     padding-top: 25px;
@@ -156,22 +116,6 @@
 .promo-text{
     width: 60%;
 }
-@media (max-width: 768px){
-    .promo-s{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 70px;
-        align-items: center;
-    }
-    .promo-text{
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-}
-
-
 .balancer-img { grid-area: img; }
 .balancer-text { grid-area: text; }
 .balancer-price { grid-area: price; }
@@ -206,14 +150,9 @@
 }
 // ----------- WORLD MAP ---------- //
 .map{
+    padding-top: 40px;
     background-image: url('/img/main_background.jpeg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
 }
-.map-content{
-    margin-top: 65px;
-}    
 .map-content__text{    
     text-align: center;
     color: #FFFFFF;
@@ -223,4 +162,53 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 150px;
+}
+@media (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .hero{
+        height: 1080px;
+    }
+    .list-of-options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .security__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 120px;
+        padding-bottom: 160px;
+        text-align: justify;
+    }
+    .content-text{
+        width: 100%;
+        color: white;
+        padding-right: 50px;
+        margin-bottom: 20px;
+    }
+    .security-list{
+        padding-top: 25px;
+        text-align: start;
+        margin-left: 30px;
+    }
+    .promo-s{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        align-items: center;
+    }
+    .promo-text{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }

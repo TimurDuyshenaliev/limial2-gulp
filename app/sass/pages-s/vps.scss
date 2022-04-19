@@ -1,9 +1,4 @@
 // ----------- HERO ---------- //
-.hero2{
-    background-image: url("/img/main_background.jpeg");
-    height: 100vh;
-    padding-top: 40px;
-}
 .main--list__item{
     color: #ffffff;
 }
@@ -12,13 +7,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
 }
-
 // ----------- PLANS ---------- //
 .plans{
     text-align: center;
-    padding-top: 30px;
-    background-image: url("/img/wave-3.png"), url("/img/main_background.jpeg");
+    background-image: url('/img/wave-3.png'), linear-gradient(90deg, #1243aa 0%, #1d5ccf 100%);
     background-size: 100% 60%;
     background-repeat: no-repeat;
 }
@@ -40,11 +34,11 @@
     width: 276px;
     height: 470px;
     color: #ffffff;
-}
-.plans--list__item > h3{
-    margin-top: 15px;
-    font-size: 3rem;
-    font-weight: 700;
+    h3{
+        margin-top: 15px;
+        font-size: 3rem;
+        font-weight: 700;
+    }
 }
 .specs{
     margin-top: 28px;
@@ -73,7 +67,6 @@
 .banner-p{grid-area: p;}
 .banner-price{grid-area: price;}
 .banner-btn{grid-area: btn;}
-
 .promo__price-P{
     font-size: 5.5rem;
     line-height: 1;
@@ -130,27 +123,26 @@
     border-radius: 20px;
     width: 386px;
     padding: 20px;
+    img{
+        padding-top: 36px;
+    }
+    p{
+        font-size: 600;
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    h3{
+        font-size: 600;
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
 }
 .scale__list__item:nth-child(2) > img{
     width: 100px;
     margin-bottom: 30px;
 }    
-.scale__list__item > img{
-    padding-top: 36px;
-}
-.scale__list__item > p{
-    font-size: 600;
-    font-size: 1.8rem;
-    line-height: 1.5;
-    
-}
-.scale__list__item > h3{
-    font-size: 600;
-    font-size: 2rem;
-    line-height: 1.5;
-    margin-top: 20px;
-    
-}
+
 // ----------- OPTIONS-VPS ---------- //
 .options-vps{
     text-align: center;
@@ -172,26 +164,25 @@
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 40px;
-
-}
-.options-vps__list__item > h3{
-    font-size: 1.8rem;
-    line-height: 1.5;
-    font-weight: 600;
-    color: #2770EC;
-    padding: 0;
+    h3{
+        font-size: 1.8rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #2770EC;
+        padding: 0;
+    }
+    p{
+        color: #0000009E;
+        font-size: 1.6rem;
+        line-height: 1.25;
+    }
 }
 .options-vps__price{
     color: #2770EC;
     font-size: 4.8rem;
     line-height: 1.8;
     font-weight: 700;
-}    s
-.options-vps__list__item > p{
-    color: #0000009E;
-    font-size: 1.6rem;
-    line-height: 1.25;
-}
+}    
 .btn-vps{
     color:#2770EC;
     width: 200px;

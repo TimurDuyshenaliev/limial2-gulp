@@ -1,12 +1,13 @@
 // ----------- HERO ---------- //
 .hero{
-    background-image: url("/img/main_background.jpeg");
+    background-image: url('/img/main_background.jpeg');
 }
 .about_p{
     color: white;
 }
 .about__title{
     color: #ffffff;
+    padding-bottom: 40px;
 }
 .about_h3{
     color: #ffffff;
@@ -15,16 +16,15 @@
     color: #ffffff;
 }
 .about{
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .about__list{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
 }
 .about__list__item1{
     width: 50%;
-    margin-right: 70px;
+    margin-right: 20%;
 }
 .list__item__button_list{
     display: flex;
@@ -45,11 +45,11 @@
 }
 .social_list__item{
     margin-top: 20px;
-}
-.social_list__item > a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    color: #ffffff;
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        color: #ffffff;
+    }
 }
