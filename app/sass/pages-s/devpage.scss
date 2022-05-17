@@ -1,0 +1,28 @@
+.dev-page{
+    background-image: url('/img/wave-2.png');
+    background-size: cover;
+    background-color: #FBFBFB;
+    height: 70vh;
+}
+.dev-page__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    
+    img{
+        width: 130px;
+    }
+    h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        color: #383838;
+    }
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: #383838;
+    }
+}
