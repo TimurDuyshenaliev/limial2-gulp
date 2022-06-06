@@ -7,30 +7,35 @@
     margin-bottom: 30px;
 }
 .main > .conteiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas:"main__text main__img main__img"
+                        "main__text__button main__img main__img" ;
 }
-.text__h1{
-    font-weight: bold;
-    font-size: 3.8rem;
-    line-height: 1.35;
-    margin-bottom: 40px;
-    color: white;
+.main__text{
+    grid-area: main__text;
+    .text__h1{
+        font-weight: bold;
+        font-size: 3.8rem;
+        line-height: 1.35;
+        margin-bottom: 40px;
+        color: white;
+    }
+    .text__h2{
+        font-weight: normal;
+        font-size: 2.25rem;
+        line-height: 1.35;
+        padding-bottom: 40px;
+        color: white;
+    }
 }
-.text__h2{
-    font-weight: normal;
-    font-size: 2.25rem;
-    line-height: 1.35;
-    padding-bottom: 40px;
-    color: white;
-}
-.more {
-    width: 180px;
-    color: #1B56C5;
+.main__text__button{
+    grid-area: main__text__button;
+    .more {
+        width: 180px;
+        color: #1B56C5;
 }
 .main__img{
+    grid-area: main__img;
     margin-top: 40px;
     img{
         width: 100%;
