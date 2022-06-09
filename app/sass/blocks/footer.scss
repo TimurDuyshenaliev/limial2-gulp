@@ -48,3 +48,9 @@ footer{
     font-size: 1.4rem;
     line-height: 1.25;
 }
+// ADAPTIVE
+@media (max-width: 450px) {
+    footer{
+        display: none;
+    }
+}
