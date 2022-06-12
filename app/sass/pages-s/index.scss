@@ -239,6 +239,7 @@
 @media (max-width: 450px){
     .main{
         padding-top: 80px;
+        padding-bottom: 50px;
     }
     .main > .conteiner{
         display: grid;
@@ -260,7 +261,7 @@
         }
     }
     .list-of-options__item:nth-child(3){
-        margin-top: 15px;
+        margin-top: 45px;
     }
     .security__content{
         padding-top: 30px;

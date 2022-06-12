@@ -34,17 +34,14 @@
     text-align: justify;
 }
 .contacts--bottom{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin-top: 30px;
     padding-bottom: 50px;
 }
 .contacts--bottom__segment{
-    width: 31%;
+    width: 100%;
     height: 145px;
     background-color: #FFFFFF;
     border-radius: 3px;
@@ -52,7 +49,7 @@
     flex-direction: row;
     align-items: center;
     .segment--icon{
-        width: 90px;
+        width: 20%;
         height: 100%;
         border-right: 2px solid #D8D8D8 ;
         text-align: center;
@@ -63,7 +60,7 @@
         border-radius: 3px;
     }
     .segment--text{
-        width: 260px;
+        width: 80%;
         padding: 20px;
         h3{
             font-size: 1.8rem;
@@ -77,5 +74,65 @@
             line-height: 1;
             color: #909090;
         }
+    }
+}
+@media (max-width: 800px){
+    .contacts{
+        padding-top: 30px;
+    }
+    .contacts--top{
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 0;
+        height: auto;
+        .contacts--top__p1{
+            width: auto;
+            padding: 10px;
+            p{
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 1;
+            }
+        }
+    }
+    .contacts--top__p2 > p{
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .contacts--bottom{
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 550px){
+    .contacts{
+        padding-top: 30px;
+    }
+    .contacts--top{
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 0;
+        height: auto;
+        .contacts--top__p1{
+            width: auto;
+            padding: 10px;
+            p{
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 1;
+            }
+        }
+    }
+    .contacts--top__p2 > p{
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .contacts--bottom{
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
     }
 }
