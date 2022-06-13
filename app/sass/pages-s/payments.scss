@@ -1,0 +1,48 @@
+.payments{
+    background-image: url("/img/main_background.jpeg");
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2{
+        color: #fff
+    }
+    h3{
+        color: #fff;
+        padding-top: 20px;
+        font-weight: 600;
+    }
+    p{
+        color: #fff;
+    }
+}
+.payments__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap:30px;
+}
+.info__text2__creditcard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    img{
+        width: 130px;
+    }
+}
+.delivery{
+    h3{
+        text-align: center;
+    }
+}
+@media (max-width: 750px){
+    .payments__info{
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        gap:20px;
+    }
+    .info__text2__creditcard{
+        img{
+            width: 23%;
+            height: auto;
+        }
+    }
+}    
