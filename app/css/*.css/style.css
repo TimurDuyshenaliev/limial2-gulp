@@ -824,65 +824,114 @@ p {
   }
 }
 footer {
-  background-image: url("/img/main_background.jpeg");
+  background-image: url("/img/footer.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #FFFFFF;
 }
 
-.footer-list {
-  display: inline-flex;
-  justify-content: space-evenly;
+.footer__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-content: center;
+  gap: 25px;
+  padding-top: 60px;
+  padding-bottom: 180px;
+}
+
+.footer__list__help {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 50px;
-  margin-top: 75px;
-  margin-bottom: 85px;
-  width: 100%;
-}
-
-.footer-main-info__contacts {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
   gap: 15px;
-  margin-top: 15px;
+  padding-top: 80px;
 }
-
-.footer-help {
-  width: 193px;
-}
-
-.footer-list > ul > li > .slogan {
-  margin-top: 0;
-  margin-bottom: 20px;
+.footer__list__help h3 {
+  color: #000;
   font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.footer__list__help a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #000;
+}
+
+.footer__list__main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.footer__list__main-info .logo .logo p {
+  color: #000;
+  font-weight: 600;
+}
+.footer__list__main-info .slogan {
+  font-size: 1.4rem;
   line-height: 1.5;
   font-weight: 500;
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
 }
-
-.footer-list > ul > li > p {
-  font-weight: 700;
-  margin-top: 25px;
-}
-
-.footer-list > ul > li {
-  margin-bottom: 15px;
-}
-
-.footer-list > ul > li > a {
-  text-decoration: none;
+.footer__list__main-info .btn {
+  width: 200px;
   color: #FFFFFF;
-  font-weight: 400;
-  font-size: 1.4rem;
+  background-color: #2770EC;
+}
+.footer__list__main-info .footer__main__contacts {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+.footer__list__main-info .footer__main__contacts a img {
+  width: 35px;
+}
+
+.footer__list__company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  padding-top: 80px;
+}
+.footer__list__company h3 {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.footer__list__company a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.25;
+  color: #000;
+}
+
+.copyright {
+  padding-left: 20px;
 }
 
 @media (max-width: 450px) {
-  footer {
+  .footer__list__company {
     display: none;
+  }
+
+  .footer__list__help {
+    display: none;
+  }
+
+  .footer__list {
+    grid-template-columns: 1fr;
   }
 }
 .hero {
