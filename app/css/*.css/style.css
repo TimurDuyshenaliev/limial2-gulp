@@ -2199,7 +2199,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .option-content1 {
-  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .option-content1 h2 {
   text-align: center;
@@ -2220,8 +2221,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-top: 30px;
   margin-bottom: 40px;
   text-align: center;
-  width: 25%;
-  height: 300px;
+  width: 300px;
+  height: auto;
 }
 .list__item__block h3 {
   font-size: 2.2rem;
@@ -2235,6 +2236,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   font-size: 1.8rem;
   line-height: 1;
   margin-top: 5px;
+}
+.list__item__block a button {
+  width: auto;
 }
 
 .options__price p {
@@ -2260,53 +2264,60 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.payments {
+.option-content2 {
   background-image: url("/img/main_background.jpeg");
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.payments h2 {
-  color: #fff;
-}
-.payments h3 {
-  color: #fff;
+.option-content2 a {
+  display: flex;
+  justify-content: flex-end;
   padding-top: 20px;
-  font-weight: 600;
-}
-.payments p {
-  color: #fff;
 }
 
-.payments__info {
+.disk-storage {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-areas: "img text" "img price";
   gap: 30px;
 }
+.disk-storage img {
+  grid-area: img;
+  width: 100%;
+}
 
-.info__text2__creditcard {
+.disk-storage__text {
+  grid-area: text;
+  color: #fff;
+}
+
+.disk-storage__price {
+  grid-area: price;
+  color: #333;
+}
+.disk-storage__price img {
+  width: 80px;
+}
+.disk-storage__price .price-block {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-}
-.info__text2__creditcard img {
-  width: 130px;
-}
-
-.delivery h3 {
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-@media (max-width: 750px) {
-  .payments__info {
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    gap: 20px;
+@media (max-width: 450px) {
+  .options__list__item {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .info__text2__creditcard img {
-    width: 23%;
-    height: auto;
+  .disk-storage {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 .page-404 {
