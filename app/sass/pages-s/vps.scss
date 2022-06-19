@@ -31,9 +31,10 @@
     border: 2px solid #82C3FD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    width: 276px;
+    width: 23%;
     height: 470px;
     color: #ffffff;
+    padding: 25px;
     h3{
         margin-top: 15px;
         font-size: 3rem;
@@ -41,8 +42,8 @@
     }
 }
 .specs{
-    margin-top: 28px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 .plans-price1{
     font-size: 5.5rem;
@@ -61,6 +62,7 @@
     color:#153CB1;
     border: 2px solid #153CB1;
 }
+
 // ----------- BANNER ---------- //
 .banner-img{grid-area: img;}
 .banner-h2{grid-area: h2;}
@@ -84,7 +86,7 @@
                          'img p p btn';
     text-align: center;
     padding: 20px;
-    width: 800px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
@@ -146,7 +148,8 @@
 // ----------- OPTIONS-VPS ---------- //
 .options-vps{
     text-align: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 .options-vps__list{
     display: flex;
@@ -155,6 +158,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 880px;
+    padding-bottom: 30px;
 }
 .options-vps__list__item{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -162,8 +166,6 @@
     border: 4px solid #2770EC;
     width: 278px;
     padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 40px;
     h3{
         font-size: 1.8rem;
         line-height: 1.5;
@@ -192,4 +194,33 @@
     background-color: #2770EC;
     color: #FFFFFF;
     border: #2770EC;
+}
+@media (max-width: 450px) {
+    .main{
+        flex-direction: column-reverse;
+    }
+    .banner__promo{
+        grid-template-areas:"img "
+                            "h2 "
+                            "p "
+                            "btn";       
+        justify-items: center;
+        gap: 5px;
+        .banner-h2{
+            font-size: 2.6rem;
+        }
+    }
+    .scale__list{
+        flex-direction: column;
+        .scale__list__item{
+            width: 100%;
+        }
+    }
+    .options-vps__list{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .plans--list{
+        justify-content: flex-start;
+    }
 }

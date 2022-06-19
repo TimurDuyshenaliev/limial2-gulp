@@ -10,6 +10,11 @@
     <!-- build:css css/style.min.css-->
     <link rel="stylesheet" href="css/*.css/style.css"/>
     <!-- endbuild -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <!-- START HEADER -->
@@ -116,16 +121,16 @@
 <!-- END HERO -->
 <!-- START PLANS -->
 <div class="plans">
-    <div class="conteiner">
+    <div class="conteiner swiper mySwiper">
         <h2 class="plans-h2">
             Тарифы
         </h2>
-        <ul class="plans--list">
-            <li class="plans--list__item">
+        <div class="plans--list swiper-wrapper">
+            <div class="plans--list__item swiper-slide">
                 <h3>
                     LIGHT
                 </h3>
-                <div class="plans-price">
+                <div class="plans-price ">
                     <p>
                         от
                     </p>
@@ -151,8 +156,8 @@
                     </p>
                 </div>
                 <button class="btn btn-plans">Заказать</button>
-            </li>
-            <li class="plans--list__item">
+            </div>
+            <div class="plans--list__item swiper-slide">
                 <h3>
                     ESSENTIAL
                 </h3>
@@ -182,8 +187,8 @@
                     </p>
                 </div>
                 <button class="btn btn-plans">Заказать</button>
-            </li>
-            <li class="plans--list__item">
+            </div>
+            <div class="plans--list__item swiper-slide">
                 <h3>
                     COMFORT
                 </h3>
@@ -213,8 +218,8 @@
                     </p>
                 </div>
                 <button class="btn btn-plans">Заказать</button>
-            </li>
-            <li class="plans--list__item">
+            </div>
+            <div class="plans--list__item swiper-slide">
                 <h3>
                     ELITE
                 </h3>
@@ -244,8 +249,8 @@
                     </p>
                 </div>
                 <button class="btn btn-plans">Заказать</button>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
 <!-- END PLANS -->
@@ -498,3 +503,31 @@
 </footer>
 <!-- END FOOTER -->
 <script src="js/start.js"></script>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+       640: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+       },
+       768: {
+         slidesPerView: 3,
+         spaceBetween: 40,
+       },
+       1024: {
+         slidesPerView: 4,
+         spaceBetween: 50,
+       },
+     },
+    });
+  </script>
