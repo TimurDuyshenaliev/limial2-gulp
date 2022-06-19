@@ -108,9 +108,13 @@
                         </p>
                     </li>
                 </ul>
-                <button class="btn more">
-                    Узнать больше
-                </button>
+                <div class="main__text__button">
+                    <a href="#" class="main__text__button">
+                        <button class="btn more">
+                            Узнать больше
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="main__img">
                 <img src="img/vps-heroimage.svg" alt="image server">
@@ -251,6 +255,9 @@
                 <button class="btn btn-plans">Заказать</button>
             </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
     </div>
 </div>
 <!-- END PLANS -->
@@ -326,8 +333,8 @@
         <h2>
             Опции совместимые с VPS
         </h2>
-        <ul class="options-vps__list">
-            <li class="options-vps__list__item">
+        <div class="options-vps__list">
+            <div class="options-vps__list__item">
                 <h3>
                     Геолокация IP
                 </h3>
@@ -340,8 +347,8 @@
                 <p>
                     Оптимизируйте SEO
                 </p>
-            </li>
-            <li class="options-vps__list__item">
+            </div>
+            <div class="options-vps__list__item">
                 <h3>
                     Плавающий IP
                 </h3>
@@ -354,8 +361,8 @@
                 <p>
                     Работа без перерывов
                 </p>
-            </li>
-            <li class="options-vps__list__item">
+            </div>
+            <div class="options-vps__list__item">
                 <h3>
                     Балансировщик нагрузки
                 </h3>
@@ -368,10 +375,12 @@
                 <p>
                     Гарантированная гибкость
                 </p>
-            </li>
-        </ul>
-        <button class="btn btn-vps">Ознакомиться ➔</button>
-        <a href="/option-vps.html">option</a>
+            </div>
+        </div>
+        <a href="/option-vps.html">
+            <button class="btn btn-vps">Ознакомиться ➔</button>
+        </a>
+        
     </div>
 </div>
 <!-- END OPTIONS VPS -->
@@ -509,8 +518,12 @@
  <!-- Initialize Swiper -->
  <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 20,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
