@@ -40,3 +40,24 @@
         }
     }
 }
+@media (max-width: 600px) {
+    .terms{
+        padding-top: 80px;
+    }
+    .terms-text{
+        h2{
+            font-size: 2.6rem;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        h3{
+            font-size: 2.6rem;
+        }
+        ul{
+            li{
+                font-size: 1.8rem;
+            }
+        }
+    } 
+}
