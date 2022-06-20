@@ -38,10 +38,17 @@
         line-height: 1;
         margin-top: 5px;
     }
-    a{
-        button{
-            width: auto;
-        }
+    .item__block__button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn{
+        width: 80%;
+        color:#FFFFFF;
+        background-color: #2770EC;
+    }
+    .btn:hover{
+        border:0px;
     }
 }
 .options__price{
@@ -76,6 +83,13 @@
         display: flex;
         justify-content: flex-end;
         padding-top: 20px;
+        .btn{
+            width: 18%;
+            color: #2770EC;
+        }
+        .btn:hover{
+            color: #FFFFFF;
+        }
     }
 }
 .disk-storage{
@@ -96,9 +110,6 @@
 .disk-storage__price{
     grid-area: price;
     color: #333;
-    img{
-        width: 80px;
-    }
     .price-block{
         display: flex;
         flex-direction: row;
@@ -108,6 +119,9 @@
         border-radius: 10px;
         padding: 10px;
         margin-top: 10px;
+        p{
+            color: #1a53c2;
+        }
     }
 }
 @media (max-width: 450px){

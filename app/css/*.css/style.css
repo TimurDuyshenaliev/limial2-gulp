@@ -891,6 +891,9 @@ footer {
   color: #FFFFFF;
   background-color: #2770EC;
 }
+.footer__list__main-info .btn:hover {
+  border: 0px;
+}
 .footer__list__main-info .footer__main__contacts {
   width: 50%;
   padding-top: 30px;
@@ -2372,8 +2375,17 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   line-height: 1;
   margin-top: 5px;
 }
-.list__item__block a button {
-  width: auto;
+.list__item__block .item__block__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.list__item__block .btn {
+  width: 80%;
+  color: #FFFFFF;
+  background-color: #2770EC;
+}
+.list__item__block .btn:hover {
+  border: 0px;
 }
 
 .options__price p {
@@ -2409,6 +2421,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   justify-content: flex-end;
   padding-top: 20px;
 }
+.option-content2 a .btn {
+  width: 18%;
+  color: #2770EC;
+}
+.option-content2 a .btn:hover {
+  color: #FFFFFF;
+}
 
 .disk-storage {
   display: grid;
@@ -2429,9 +2448,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   grid-area: price;
   color: #333;
 }
-.disk-storage__price img {
-  width: 80px;
-}
 .disk-storage__price .price-block {
   display: flex;
   flex-direction: row;
@@ -2441,6 +2457,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
+}
+.disk-storage__price .price-block p {
+  color: #1a53c2;
 }
 
 @media (max-width: 450px) {
