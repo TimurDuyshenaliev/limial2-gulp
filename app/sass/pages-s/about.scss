@@ -53,6 +53,9 @@
         align-items: center;
         gap: 15px;
         color: #ffffff;
+        img{
+            width: 55px;
+        }
     }
 }
 @media (max-width: 450px){
@@ -80,7 +83,9 @@
             .list__item__social_list{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
+                align-content: center;
+                flex-wrap: wrap;
             }
         }
         .list__item__button_list{
