@@ -88,18 +88,10 @@
     color:#153CB1;
     border: 2px solid #153CB1;
 }
-
-// ----------- BANNER ---------- //
-.banner-img{grid-area: img;}
-.banner-h2{grid-area: h2;}
-.banner-p{grid-area: p;}
-.banner-price{grid-area: price;}
-.banner-btn{grid-area: btn;}
-.promo__price-P{
-    font-size: 5.5rem;
-    line-height: 1;
-    font-weight: 700;
+.plans-note{
+    font-size: 1.5rem;
 }
+// ----------- BANNER ---------- //
 .banner__promo{
     background: linear-gradient(189.39deg, #2A77F7 0%, #1B93FF 0.01%, #1B93FF 3.39%, #153CB1 92.91%);
     border: 4px solid #82C3FD;
@@ -118,20 +110,34 @@
     color: #ffffff;
     margin-top: 100px;
     margin-bottom: 80px;
-}
-.banner-p{
-    display: grid;
-    align-items: start;
-}
-.banner-h2{
-    font-size: 3rem;
-    padding: 0;
-    display: grid;
-    align-items: center;
-    
-}
-.plans-note{
-    font-size: 1.5rem;
+    .banner-img{
+        grid-area: img;
+    }
+    .banner-h2{
+        grid-area: h2;
+        font-size: 3rem;
+        padding: 0;
+        display: grid;
+        align-items: center;
+    }
+    .banner-p{
+        grid-area: p;
+        display: grid;
+        align-items: start;
+    }
+    .banner-price{
+        grid-area: price;
+    }
+    .banner-btn{
+        grid-area: btn;
+    }
+    .promo__price{
+        .promo__price-P{
+            font-size: 5.5rem;
+            line-height: 1;
+            font-weight: 700;
+        }
+    }
 }
 // ----------- SCALE ---------- //
 .scale{
@@ -239,6 +245,7 @@
         background-repeat: no-repeat;
     }
     .banner__promo{
+        padding: 0;
         grid-template-areas:"img "
                             "h2 "
                             "p "
@@ -247,6 +254,22 @@
         gap: 5px;
         .banner-h2{
             font-size: 2.6rem;
+            padding: 10px;
+        }
+        .banner-btn{
+            display: none;
+        }
+        .promo__price{
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 10px;
+            .promo__price-P{
+                font-size: 3.6rem;
+                padding-top: 10px;
+            }
+            p{
+                color: #1243aa;
+            }
         }
     }
     .scale__list{

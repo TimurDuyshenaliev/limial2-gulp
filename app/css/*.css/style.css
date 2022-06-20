@@ -1369,30 +1369,8 @@ footer {
   border: 2px solid #153CB1;
 }
 
-.banner-img {
-  grid-area: img;
-}
-
-.banner-h2 {
-  grid-area: h2;
-}
-
-.banner-p {
-  grid-area: p;
-}
-
-.banner-price {
-  grid-area: price;
-}
-
-.banner-btn {
-  grid-area: btn;
-}
-
-.promo__price-P {
-  font-size: 5.5rem;
-  line-height: 1;
-  font-weight: 700;
+.plans-note {
+  font-size: 1.5rem;
 }
 
 .banner__promo {
@@ -1413,21 +1391,31 @@ footer {
   margin-top: 100px;
   margin-bottom: 80px;
 }
-
-.banner-p {
-  display: grid;
-  align-items: start;
+.banner__promo .banner-img {
+  grid-area: img;
 }
-
-.banner-h2 {
+.banner__promo .banner-h2 {
+  grid-area: h2;
   font-size: 3rem;
   padding: 0;
   display: grid;
   align-items: center;
 }
-
-.plans-note {
-  font-size: 1.5rem;
+.banner__promo .banner-p {
+  grid-area: p;
+  display: grid;
+  align-items: start;
+}
+.banner__promo .banner-price {
+  grid-area: price;
+}
+.banner__promo .banner-btn {
+  grid-area: btn;
+}
+.banner__promo .promo__price .promo__price-P {
+  font-size: 5.5rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
 .scale {
@@ -1535,12 +1523,29 @@ footer {
   }
 
   .banner__promo {
+    padding: 0;
     grid-template-areas: "img " "h2 " "p " "btn";
     justify-items: center;
     gap: 5px;
   }
   .banner__promo .banner-h2 {
     font-size: 2.6rem;
+    padding: 10px;
+  }
+  .banner__promo .banner-btn {
+    display: none;
+  }
+  .banner__promo .promo__price {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px;
+  }
+  .banner__promo .promo__price .promo__price-P {
+    font-size: 3.6rem;
+    padding-top: 10px;
+  }
+  .banner__promo .promo__price p {
+    color: #1243aa;
   }
 
   .scale__list {
