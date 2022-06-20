@@ -63,7 +63,7 @@ footer{
         background-color: #2770EC;
     }
     .footer__main__contacts{
-        width: 100%;
+        width: 50%;
         padding-top: 30px;
         display: flex;
         flex-direction: row;
@@ -71,7 +71,9 @@ footer{
         gap: 10px;
         a{
             img{
-                width: 35px;
+                width: 100%;
+                border-radius: 15px;
+                box-shadow: 2px 5px 11px -5px rgb(0 1 2);
             }
         }
     }
@@ -100,6 +102,9 @@ footer{
 }
 // ADAPTIVE
 @media (max-width: 450px) {
+    footer{
+        background-size: 300% 30%;
+    }
     .footer__list__company{
         display: none;
     }
