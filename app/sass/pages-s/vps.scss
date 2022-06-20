@@ -2,12 +2,34 @@
 .main--list__item{
     color: #ffffff;
 }
-.main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    // padding-top: 50px;
+.hero__content{
+    display: grid;
+    grid-template-areas: "h1 img img"
+                         "list img img"
+                         "btn img img" ;
+    padding-top: 80px;
+    .hero__content__text-h1{
+        grid-area: h1;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.25;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .hero__content__text-list{
+        grid-area: list;
+        list-style: initial;
+    }
+    .main__text__button{
+        grid-area: btn;
+    }
+    .hero__content__img{
+        grid-area: img;
+        
+        img{
+            width: 100%;
+        }
+    }
 }
 // ----------- PLANS ---------- //
 .plans{
@@ -15,6 +37,10 @@
     background-image: url('/img/wave-3.png'), linear-gradient(90deg, #1243aa 0%, #1d5ccf 100%);
     background-size: 100% 60%;
     background-repeat: no-repeat;
+}
+.swiper{
+    position: inherit;
+    
 }
 .plans-h2{
     margin-bottom: 20px;
@@ -196,8 +222,16 @@
     border: #2770EC;
 }
 @media (max-width: 450px) {
-    .main{
-        flex-direction: column-reverse;
+    .hero__content{
+        padding-bottom: 80px;
+        grid-template-areas: "h1"
+                             "img"
+                             "list"
+                             "btn";
+        justify-items: center;
+        .hero__content__img{
+            padding-bottom: 40px;
+        }
     }
     .plans{
         background: url(/img/wave-3.png), linear-gradient(151deg, #1243aa 0%, #1d5ccf 100%);
