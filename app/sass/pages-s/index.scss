@@ -4,29 +4,30 @@
     background-image:url('/img/main_background.jpeg');
 }
 .main{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 .main > .conteiner{
     display: grid;
-    grid-template-areas:"main__text main__img main__img"
+    grid-template-areas:"h1 main__img main__img"
+                        "h2 main__img main__img"
                         "main__text__button main__img main__img" ;
 }
-.main__text{
-    grid-area: main__text;
-    .text__h1{
-        font-weight: bold;
-        font-size: 3.8rem;
-        line-height: 1.35;
-        margin-bottom: 40px;
-        color: white;
-    }
-    .text__h2{
-        font-weight: normal;
-        font-size: 2.25rem;
-        line-height: 1.35;
-        padding-bottom: 40px;
-        color: white;
-    }
+.text__h1{
+    grid-area: h1;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 1.25;
+    color: white;
+}
+.text__h2{
+    grid-area: h2;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 1.35;
+    color: white;
+}
+.main_btn{
+    transform: translateY(-40px);
 }
 .main__text__button{
     grid-area: main__text__button;
@@ -42,7 +43,6 @@
 }
 .main__img{
     grid-area: main__img;
-    margin-top: 40px;
     img{
         width: 100%;
     }

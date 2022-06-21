@@ -91,6 +91,10 @@ summary::-webkit-details-marker {
 .your-server__result-filter{
     color: #FFFFFF;
     width: 25%;
+    
+}
+.rusult-filter__btn{
+    padding-top: 40px;
 }
 input[type=range] {
     width: 100%;
@@ -113,7 +117,11 @@ input[type=checkbox]{
     justify-content: space-between;
     width: 100%;
 }
-
+form{
+    a{
+        padding-top: 40px;
+    }
+}
 label{
     font-size: 1.6rem;
     font-weight: 500;
@@ -181,7 +189,8 @@ input[type="checkbox"] {
     color: #fff;
     padding: 0;
     background-color: inherit;
-    margin-top: 40px;
+    margin-top: 25px;
+    width: 100%;
 }
 
 input[type=range]{
@@ -211,6 +220,16 @@ input[type=range]:focus {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
 }
+.btn-apply{
+    color:#FFFFFF;
+    border: #FFFFFF 1px solid;
+    background-color: transparent;
+    width: 100%;
+}
+.btn-apply:hover{
+    color:#1A49C0;
+    background-color: #FFFFFF;
+}
 .result-h3{grid-area: h3;}
 .result-specs1{grid-area: specs1;}
 .result-specs2{grid-area: specs2;}
@@ -225,7 +244,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 35px;
-    margin-left: 20px;
+    margin-left: 90px;
     width: 90%;
 }
 .result-price{

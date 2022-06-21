@@ -11,14 +11,15 @@
     .hero__content__text-h1{
         grid-area: h1;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 3.8rem;
         line-height: 1.25;
-        color: white;
         margin-bottom: 40px;
+        color: white;
     }
     .hero__content__text-list{
         grid-area: list;
         list-style: initial;
+        padding-bottom: 40px;
     }
     .main__text__button{
         grid-area: btn;
@@ -41,6 +42,9 @@
 .swiper{
     position: inherit;
     
+}
+.swiper-slide{
+    height: 280px;
 }
 .plans-h2{
     margin-bottom: 20px;
