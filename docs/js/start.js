@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".burger-container"),c=document.querySelector(".header");e.onclick=function(){c.classList.toggle("menu-opened")}}();
