@@ -1,6 +1,6 @@
 // ----------- FOOTER ---------- //
 footer{
-    background-image:url('/img/footer.png');
+    background-image:image-url('footer.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -13,7 +13,7 @@ footer{
     align-content: center;
     gap: 25px;
     padding-top: 60px;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
 }
 .footer__list__help{
     display: flex;
@@ -76,7 +76,7 @@ footer{
             img{
                 width: 100%;
                 border-radius: 15px;
-                box-shadow: 2px 5px 11px -5px rgb(0 1 2);
+                box-shadow: 2px 5px 11px -5px #000102;
             }
         }
     }
@@ -101,7 +101,8 @@ footer{
     }
 }
 .copyright{
-    padding-left: 20px;
+    transform: translate(-5%, -30px);
+    font-size: 1.1rem;
 }
 // ADAPTIVE
 @media (max-width: 450px) {

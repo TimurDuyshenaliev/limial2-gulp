@@ -1,4 +1,8 @@
 // ----------- HERO ---------- //
+.hero{
+    background: image-url('main_background.jpeg');
+    height: 100vh;
+}
 .main--list__item{
     color: #ffffff;
 }
@@ -20,9 +24,21 @@
         grid-area: list;
         list-style: initial;
         padding-bottom: 40px;
+        .main--list__item {
+            padding-bottom: 10px;
+        }
     }
     .main__text__button{
         grid-area: btn;
+        .more {
+            width: 230px;
+            height: 70px;
+            font-size: 1.4rem;
+            color: #1B56C5;
+            }
+            .more:hover{
+                color: #FFFFFF;
+            }
     }
     .hero__content__img{
         grid-area: img;
@@ -35,16 +51,27 @@
 // ----------- PLANS ---------- //
 .plans{
     text-align: center;
-    background-image: url('/img/wave-3.png'), linear-gradient(90deg, #1243aa 0%, #1d5ccf 100%);
+    background-image: image-url('wave-3.png'), linear-gradient(90deg, #1243aa 0%, #1d5ccf 100%);
     background-size: 100% 60%;
     background-repeat: no-repeat;
 }
 .swiper{
     position: inherit;
-    
+}
+.swiper-wrapper{
+    z-index: 0;
+}
+.swiper-button-next{
+    top: 140%;
+    z-index: 0;
+}
+.swiper-button-prev{
+    top: 140%;
+    z-index: 0;
 }
 .swiper-slide{
-    height: 280px;
+    height: 100%;
+    z-index: 0;
 }
 .plans-h2{
     margin-bottom: 20px;
@@ -62,7 +89,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     width: 150px;
-    height: 100%;
     color: #ffffff;
     padding: 25px;
     h3{
@@ -244,7 +270,7 @@
         }
     }
     .plans{
-        background: url(/img/wave-3.png), linear-gradient(151deg, #1243aa 0%, #1d5ccf 100%);
+        background: image-url('wave-3.png'), linear-gradient(151deg, #1243aa 0%, #1d5ccf 100%);
         background-size: 100% 60%;
         background-repeat: no-repeat;
     }
@@ -255,7 +281,6 @@
                             "p "
                             "btn";       
         justify-items: center;
-        gap: 5px;
         .banner-h2{
             font-size: 2.6rem;
             padding: 10px;

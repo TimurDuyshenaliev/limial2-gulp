@@ -1,7 +1,8 @@
-.page-404{
+// PAGE 404 & 500
+.page-error{
     height: 100vh;
 }
-.page-404__content{
+.page-error__content{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -11,7 +12,7 @@
 .page-404__content__img{
     width: 540px;
 }
-.page-404__content__text{
+.page-error__content__text{
     h1{
         font-style: normal;
         font-weight: 700;
@@ -36,11 +37,5 @@
         letter-spacing: 0.04em;
         color: #4B4B4B;
         padding-bottom: 15px;
-    }
-    .back{
-        width: 200px;
-        height: 45px;
-        color: #ffffff;
-        background-color: #2E77E9;
     }
 }

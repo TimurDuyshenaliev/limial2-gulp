@@ -1,6 +1,7 @@
 // ----------- HERO ---------- //
 .hero{
-    background-image: url('/img/main_background.jpeg');
+    background-image: image-url('main_background.jpeg');
+    height: 100vh;
 }
 .about_p{
     color: white;
@@ -39,6 +40,12 @@
 .about__list__item1{
     width: 50%;
     margin-right: 20%;
+    .about_h3{
+        padding-bottom: 25px;
+    }
+    .about_p{
+        padding-bottom: 15px;
+    }
 }
 .list__item__button_list{
     display: flex;
@@ -57,6 +64,21 @@
             width: 55px;
         }
     }
+}
+// ----------- WORLD MAP ---------- //
+.map{
+    padding-top: 40px;
+    background-image: image-url('main_background.jpeg');
+}
+.map-content__text{    
+    text-align: center;
+    color: #FFFFFF;
+}
+.world-map > img{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
 }
 @media (max-width: 450px){
     .hero{
@@ -91,6 +113,13 @@
         .list__item__button_list{
             flex-direction: column;
             gap: 5px;
+            .button_list__item{
+                a{
+                    margin-top: 20px;
+                    width: 100%;
+                    
+                }
+            }
         }
     }
 }

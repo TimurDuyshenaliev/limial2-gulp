@@ -1,22 +1,79 @@
-// ----------- HEADER ---------- //
 .header{
-    background-image:url('/img/main_background.jpeg');
+    background-image:image-url('main_background.jpeg');
 }
 .header--nav{
     font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 15px;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .header-list{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 15px;
 }
 .top--list__item{
     color: #FFFFFF;
     text-decoration: none;
 }
+// dropdown menu
+.dropbtn {
+    width: 40px;
+    background-color: transparent;
+    
+    border: none;
+    img{
+        width: 80%;
+        margin: 2px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px;
+    z-index: 1;
+    text-align: center;
+    a{
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1;
+        color: #0030AD;
+    }
+    a:nth-child(2){
+        margin-top: 10px;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 40px;
+    border-radius: 0 0 2px 2px;
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+    -moz-box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+    box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+
+}
+
+.dropdown:hover {
+    background-color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    img{
+        filter: invert(100);
+    }
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+    -moz-box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+    box-shadow: 0px 5px 20px 5px rgba(233, 232, 232, 0.872);
+}
+
 .header--bottom{
     display: flex;
     justify-content: space-between;
@@ -130,6 +187,9 @@
                 color: #FFF;
                 left: 28%;
             }
+            .icon-dropdown{
+                transform: translate(535%, -1725px);
+            }
             ul.menu {
                 position: relative;
                 display: block;
@@ -147,7 +207,7 @@
                         }
                     }
                     &:nth-child(1) {
-                        margin-top: 20px;
+                        margin-top: 80px;
                     }
                     a {
                         display: block;
@@ -200,8 +260,8 @@
                     }
                 }
                 .icon {
-                    &.icon-bag {
-                        transform: translateX(75px);
+                    &.icon-dropdown {
+                        transform: translate(535%, -725px);
                         transition-delay: 0.3s;
                     }
                 }

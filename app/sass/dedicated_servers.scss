@@ -1,6 +1,6 @@
 // ----------- HERO ---------- //
 .main__section{
-    background-image:url('/img/main_background.jpeg');
+    background-image:image-url('main_background.jpeg');
 }
 .main2{
     display: flex;
@@ -48,7 +48,7 @@
 }
 // ----------- RESULT ---------- //
 .your-server{
-    background-image:url('/img/main_background.jpeg');
+    background-image:image-url('main_background.jpeg');
     padding-bottom: 50px;
 }
 .your-server__content{
@@ -59,6 +59,17 @@
 .your-server__h2{
     color: #FFFFFF;
     padding-bottom: 70px;
+}
+.slider{
+    margin-bottom: 20px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    background: #0d6cff;
+    border-radius: 16px;
+    top:-5px;
+}
+.ui-widget.ui-widget-content{
+    height: 4px;
 }
 summary{
     margin-bottom: 15px;
@@ -136,12 +147,12 @@ input[type="checkbox"] {
     margin: 0;
     padding-bottom: 5px;
     font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
-    border-radius: 0.15em;
-    transform: translateY(-0.075em);
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border: 2px solid currentColor;
+    border-radius: 2px;
+    transform: translateY(-2px);
   
     display: grid;
     place-content: center;
@@ -151,20 +162,20 @@ input[type="checkbox"] {
     font-weight: 500;
     line-height: 1.1;
     display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
+    grid-template-columns: 16px auto;
+    gap: 8px;
     margin-top: 5px;
     margin-bottom: 10px;
   }
   input[type="checkbox"]::before {
     content: "";
-    width: 0.65em;
-    height: 0.65em;
+    width: 16px;
+    height: 16px;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
     transform: scale(0);
     transform-origin: bottom left;
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em #ffffff;
+    box-shadow: inset 16px 16px #ffffff;
     /* Windows High Contrast Mode */
     background-color: CanvasText;
   }
@@ -174,8 +185,8 @@ input[type="checkbox"] {
   }
   
   input[type="checkbox"]:focus {
-    outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em);
+    outline: max(2px, 2px) solid #fff;
+    outline-offset: max(2px, 2px);
   } 
 .net{
     display: flex;
@@ -315,4 +326,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     .your-server__result-filter{
         width: 100%;
     }
+    li{
+        .result{
+            margin-left: 0;
+            width: auto;
+        }
+    }
 }
+
