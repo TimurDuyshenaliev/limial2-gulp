@@ -1,7 +1,7 @@
 // ----------- HERO ---------- //
 .hero{
     height: 100vh;
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
 }
 .main{
     padding-top: 80px;
@@ -87,7 +87,7 @@
 }
 // ----------- SECURITY ---------- //
 .security{
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
     background-position: center;
     background-size: cover;
 }
@@ -174,7 +174,7 @@
 // ----------- WORLD MAP ---------- //
 .map{
     padding-top: 40px;
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
 }
 .map-content__text{    
     text-align: center;

@@ -1,6 +1,6 @@
 // ----------- HERO ---------- //
 .main__section{
-    background-image:image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
 }
 .main2{
     display: flex;
@@ -48,7 +48,7 @@
 }
 // ----------- RESULT ---------- //
 .your-server{
-    background-image:image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
     padding-bottom: 50px;
 }
 .your-server__content{
@@ -132,114 +132,114 @@ form{
     a{
         padding-top: 40px;
     }
-}
-label{
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.25;
-}
-input[type="checkbox"] {
-    /* Add if not using autoprefixer */
-    -webkit-appearance: none;
-    /* Remove most all native input styles */
-    appearance: none;
-    /* For iOS < 15 */
-    margin: 0;
-    padding-bottom: 5px;
-    font: inherit;
-    color: #fff;
-    width: 18px;
-    height: 18px;
-    border: 2px solid currentColor;
-    border-radius: 2px;
-    transform: translateY(-2px);
-  
-    display: grid;
-    place-content: center;
-  }
-  .form-control {
-    font-size: 1.4em;
-    font-weight: 500;
-    line-height: 1.1;
-    display: grid;
-    grid-template-columns: 16px auto;
-    gap: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-  input[type="checkbox"]::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-    transform: scale(0);
-    transform-origin: bottom left;
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 16px 16px #ffffff;
-    /* Windows High Contrast Mode */
-    background-color: CanvasText;
-  }
-  
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
-  
-  input[type="checkbox"]:focus {
-    outline: max(2px, 2px) solid #fff;
-    outline-offset: max(2px, 2px);
-  } 
-.net{
-    display: flex;
-    justify-content: center;
-}
-.result-filter__reset{
-    border: 0;
-    line-height: 2.5;
-    font-size: 1.6rem;
-    text-align: center;
-    color: #fff;
-    padding: 0;
-    background-color: inherit;
-    margin-top: 25px;
-    width: 100%;
-}
-
-input[type=range]{
-    -webkit-appearance: none;
-    margin-bottom: 15px;
-}
-input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
-    height: 5px;
-    background: #ffffff;
-    border: none;
-    border-radius: 3px;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 18px;
-    width: 18px;
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-    background: #459EFF;
-    margin-top: -7px;
-}
-input[type=range]:focus {
-    outline: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
-}
-.btn-apply{
-    color:#FFFFFF;
-    border: #FFFFFF 1px solid;
-    background-color: transparent;
-    width: 100%;
-}
-.btn-apply:hover{
-    color:#1A49C0;
-    background-color: #FFFFFF;
+    label{
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.25;
+    }
+    input[type="checkbox"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        margin: 0;
+        padding-bottom: 5px;
+        font: inherit;
+        color: #fff;
+        width: 18px;
+        height: 18px;
+        border: 2px solid currentColor;
+        border-radius: 2px;
+        transform: translateY(-2px);
+      
+        display: grid;
+        place-content: center;
+      }
+      .form-control {
+        font-size: 1.4em;
+        font-weight: 500;
+        line-height: 1.1;
+        display: grid;
+        grid-template-columns: 16px auto;
+        gap: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      input[type="checkbox"]::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 16px 16px #ffffff;
+        /* Windows High Contrast Mode */
+        background-color: CanvasText;
+      }
+      
+      input[type="checkbox"]:checked::before {
+        transform: scale(1);
+      }
+      
+      input[type="checkbox"]:focus {
+        outline: max(2px, 2px) solid #fff;
+        outline-offset: max(2px, 2px);
+      } 
+    .net{
+        display: flex;
+        justify-content: center;
+    }
+    .result-filter__reset{
+        border: 0;
+        line-height: 2.5;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #fff;
+        padding: 0;
+        background-color: inherit;
+        margin-top: 25px;
+        width: 100%;
+    }
+    
+    input[type=range]{
+        -webkit-appearance: none;
+        margin-bottom: 15px;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 300px;
+        height: 5px;
+        background: #ffffff;
+        border: none;
+        border-radius: 3px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        background: #459EFF;
+        margin-top: -7px;
+    }
+    input[type=range]:focus {
+        outline: none;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #ccc;
+    }
+    .btn-apply{
+        color:#FFFFFF;
+        border: #FFFFFF 1px solid;
+        background-color: transparent;
+        width: 100%;
+    }
+    .btn-apply:hover{
+        color:#1A49C0;
+        background-color: #FFFFFF;
+    }
 }
 .result-h3{grid-area: h3;}
 .result-specs1{grid-area: specs1;}

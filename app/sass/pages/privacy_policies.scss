@@ -1,7 +1,7 @@
-.terms{
-    background-image:image-url("main_background.jpeg");
+.policy{
+    background-image: url('/img/main_background.jpeg');
 }
-.terms-text{
+.policy--text{
     padding-top: 40px;
     padding-bottom: 30px;
     h2{
@@ -12,13 +12,6 @@
         text-align: center;
         padding-bottom: 30px;
     }
-    h3{
-        color: #ffffffe4;
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-top: 10px;
-    }
     p{
         color: #ffffffe4;
         font-size: 2rem;
@@ -26,8 +19,13 @@
         line-height: 1.5;
         text-align: justify;
     }
-    strong{
-        font-weight: 700;
+    h3{
+        color: #ffffffe4;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
     ul{
         list-style-type: square;
@@ -44,10 +42,10 @@
     }
 }
 @media (max-width: 600px) {
-    .terms{
+    .policy{
         padding-top: 80px;
     }
-    .terms-text{
+    .policy--text{
         h2{
             font-size: 2.6rem;
         }

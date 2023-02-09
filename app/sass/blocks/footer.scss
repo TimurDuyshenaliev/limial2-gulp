@@ -1,10 +1,10 @@
 // ----------- FOOTER ---------- //
 footer{
-    background-image:image-url('footer.png');
+    background-image: url('/img/footer.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .footer__list {
     display: grid;

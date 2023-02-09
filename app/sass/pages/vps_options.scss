@@ -1,5 +1,5 @@
 .option{
-    background-image: image-url('wave-2.png');
+    background-image: url('/img/wave-2.png');
     background-position: cover;
 }
 .option-content1{
@@ -76,7 +76,7 @@
     }
 }
 .option-content2{
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
     padding-top: 60px;
     padding-bottom: 60px;
     a{

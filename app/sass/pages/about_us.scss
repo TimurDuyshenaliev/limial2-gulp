@@ -1,6 +1,6 @@
 // ----------- HERO ---------- //
 .hero{
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
     height: 100vh;
 }
 .about_p{
@@ -68,7 +68,7 @@
 // ----------- WORLD MAP ---------- //
 .map{
     padding-top: 40px;
-    background-image: image-url('main_background.jpeg');
+    background-image: url('/img/main_background.jpeg');
 }
 .map-content__text{    
     text-align: center;
