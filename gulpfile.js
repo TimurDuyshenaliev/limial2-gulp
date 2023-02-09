@@ -121,24 +121,24 @@ gulp.task('watch', function(cb) {
 	cb();
 });
 
-gulp.task('useref', function (cb) { //сжатие всего остального
-     gulp.src(path.src.html)
-        .pipe(useref())  //парсит специфичные блоки и конкатенирует описанные в них стили и скрипты.
-        .pipe(gulpif('*.css', minifyCss({processImport: false})))
-        .pipe(gulp.dest('dist'));
-	cb();
-});
+// gulp.task('useref', function (cb) { //сжатие всего остального
+//      gulp.src(path.src.html)
+//         .pipe(useref())  //парсит специфичные блоки и конкатенирует описанные в них стили и скрипты.
+//         .pipe(gulpif('*.css', minifyCss({processImport: false})))
+//         .pipe(gulp.dest('dist'));
+// 	cb();
+// });
 
 
-gulp.task('script', (cb) => {  //сжатие скриптов с поддержкой ES6
-    return gulp.src('app/js/**/*')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(uglify())
-        .pipe(gulp.dest(path.dist.js))
-		cb();
-});
+// gulp.task('script', (cb) => {  //сжатие скриптов с поддержкой ES6
+//     return gulp.src('app/js/**/*')
+//         .pipe(babel({
+//             presets: ['@babel/env']
+//         }))
+//         .pipe(uglify())
+//         .pipe(gulp.dest(path.dist.js))
+// 		cb();
+// });
 
 gulp.task('images', function (cb) {
     gulp.src(path.src.img) // путь с исходниками картинок
@@ -157,10 +157,10 @@ gulp.task('images', function (cb) {
 });
 
 
-gulp.task('fonts', function () {
-	return gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest(path.dist.fonts))
-});
+// gulp.task('fonts', function () {
+// 	return gulp.src('app/fonts/**/*')
+// 		.pipe(gulp.dest(path.dist.fonts))
+// });
 
 gulp.task('clean', function (cb) {
 	del('dist');
@@ -170,6 +170,6 @@ gulp.task('clean', function (cb) {
 gulp.task('default', gulp.series('sass','watch'));
 gulp.task('dev', gulp.series('watch',));
 
-gulp.task('build', gulp.series('clean', 'sass:build', 'useref', 'images', 'fonts', 'script', 'build:delhtmlcomm', function (done) {
+gulp.task('build', gulp.series('clean', 'sass:build', 'images', 'build:delhtmlcomm', function (done) {
     done();
 }));
