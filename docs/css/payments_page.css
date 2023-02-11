@@ -482,7 +482,7 @@ p {
   }
 }
 .header {
-  background-image: url("/img/main_background.jpeg");
+  background-image: url("../img/main_background.jpeg");
 }
 
 .header--nav {
@@ -810,7 +810,7 @@ p {
   }
 }
 .payments {
-  background-image: url("/img/main_background.jpeg");
+  background-image: url("../img/main_background.jpeg");
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -859,7 +859,7 @@ p {
   }
 }
 .question {
-  background-image: url("/img/wave-2.png");
+  background-image: url("../img/wave-2.png");
   background-position: absolute;
   background-size: 100%;
 }
@@ -937,7 +937,7 @@ p {
   }
 }
 footer {
-  background-image: url("/img/footer.png");
+  background-image: url("../img/footer.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
